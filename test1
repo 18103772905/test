@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #wrap{
+            width: 1190px;
+            height: 480px;
+            border: solid 1px #000000;
+            /*居中*/
+            margin: auto;
+            display: flex;
+            position: relative;
+        }
+        #wrap .left{
+            width: 190px;
+            /*把前边的小点去掉*/
+            list-style: none;
+            height: 300px;
+            border: solid 1px #000000;
+            overflow: auto;
+
+        }
+        #wrap .right{
+            width: 400px;
+            height: 480px;
+            border: solid 1px #000000;
+            margin-left: 10px;
+        }
+        #wrap .left li{
+            height: 47px;
+            line-height: 47px;
+            padding-left: 10px  ;
+            border-bottom: solid 1px #333333;
+        }
+        #wrap .left li:hover .inner{
+            /*鼠标箭头放到该元素上会变成手的形状*/
+            cursor: pointer;
+            display: block;
+        }
+        #wrap .left li .inner{
+            width: 600px;
+            height: 300px;
+            background-color: #ff9000;
+            position: absolute;
+            top: 0;
+            left: 190px;
+            display: none;
+        }
+        #wrap .left li:nth-child(2) .inner{
+            width: 600px;
+            height: 300px;
+            background-color: grey;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <ul class="left">
+            <li>手机
+                <div class="inner"></div>
+            </li>
+            <li>电脑
+                <div class="inner"></div>
+            </li>
+            <li>家具</li>
+            <li>男装</li>
+            <li>女鞋</li>
+            <li>手机</li>
+            <li>电脑</li>
+            <li>家具</li>
+            <li>男装</li>
+            <li>女鞋</li>
+        </ul>
+        <div class="right">
+            <div class="img"></div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+</html>
